@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RealScratch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="icons/icon48.png" alt="RealScratch Logo" class="logo">
+      <h1>RealScratch</h1>
+    </div>
+
+    <!-- Initial Selection Screen -->
+    <div id="initial-selection" class="selection-screen">
+      <h2>Choose Your Role</h2>
+      <div class="role-buttons">
+        <button id="host-btn" class="primary-btn">Create Session (Host)</button>
+        <button id="join-btn" class="primary-btn">Join Session</button>
+      </div>
+    </div>
+
+    <!-- Host Screen -->
+    <div id="host-screen" class="session-screen" style="display: none;">
+      <div class="session-info">
+        <h3>Your Session</h3>
+        <div class="session-id-display">
+          <p>Session ID: <span id="host-session-id"></span></p>
+          <button id="copy-session-id" class="secondary-btn">Copy ID</button>
+        </div>
+        <div class="upload-controls">
+          <input type="file" id="uploadSB3" accept=".sb3" class="file-input" aria-label="Upload SB3 file">
+          <label for="uploadSB3" class="upload-btn">Upload .sb3</label>
+        </div>
+        <div class="participants-list">
+          <h4>Participants</h4>
+          <ul id="participants"></ul>
+        </div>
+        <button id="end-session" class="danger-btn">End Session</button>
+      </div>
+    </div>
+
+    <!-- Join Screen -->
+    <div id="join-screen" class="session-screen" style="display: none;">
+      <div class="session-info">
+        <h3>Join Session</h3>
+        <div class="input-group">
+          <input type="text" id="session-id" placeholder="Enter Session ID" class="session-input" aria-label="Session ID">
+          <button id="join-session-btn" class="primary-btn">Join</button>
+        </div>
+        <button id="back-to-selection" class="secondary-btn">Back</button>
+      </div>
+    </div>
+
+    <!-- Connected Screen (for both host and participants) -->
+    <div id="connected-screen" class="session-screen" style="display: none;">
+      <div class="session-info">
+        <h3>Connected to Session</h3>
+        <p>Session ID: <span id="current-session"></span></p>
+        <p>Status: <span id="connection-status" class="status-indicator disconnected">
+          <span class="status-dot"></span>
+          <span class="status-text">Disconnected</span>
+        </span></p>
+        <div id="participant-info">
+          <p>Your Role: <span id="user-role"></span></p>
+        </div>
+        <button id="leave-session" class="secondary-btn">Leave Session</button>
+      </div>
+    </div>
+
+    <div class="status-bar">
+      <div id="connection-status" class="status-indicator disconnected">
+        <span class="status-dot"></span>
+        <span class="status-text">Disconnected</span>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

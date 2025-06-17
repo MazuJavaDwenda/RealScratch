@@ -1,0 +1,11 @@
+{
+  "name": "realscratch",
+  "version": "1.0.0",
+  "description": "Real-time collaboration extension for Scratch",
+  "scripts": {
+    "generate-icons": "node generate-icons.js"
+  },
+  "dependencies": {
+    "sharp": "^0.32.1"
+  }
+} 

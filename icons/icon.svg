@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background circle -->
+    <circle cx="64" cy="64" r="60" fill="#4CAF50"/>
+    
+    <!-- Scratch logo stylized -->
+    <g transform="translate(32, 32) scale(0.5)">
+        <!-- Left block -->
+        <rect x="0" y="0" width="64" height="64" fill="#FF8C1A" rx="8"/>
+        <!-- Right block -->
+        <rect x="64" y="0" width="64" height="64" fill="#FF8C1A" rx="8"/>
+        <!-- Connection line -->
+        <path d="M64 32 L64 96" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+        <!-- Sync arrows -->
+        <path d="M32 48 L48 32 M32 80 L48 96" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+        <path d="M96 32 L80 48 M96 96 L80 80" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round"/>
+    </g>
+</svg> 
